@@ -16,6 +16,7 @@ if __name__ == '__main__':
     parser.add_argument('--train', type=float, default=0.7, help='fraction of the dataset that will be used for training')
     parser.add_argument('--val', type=float, default=0.2, help='fraction of the dataset that will be used for validation')
     parser.add_argument('--test', type=float, default=0.1, help='fraction of the dataset that will be used for testing')
+    parser.add_argument('--size', type = int, default = 20000, help='number of images to use as dataset, e.g. if size=10, only 10 data from the dataset will be used')
     arg = parser.parse_args()
 
 txt_files = []
@@ -25,7 +26,11 @@ for filename in os.listdir(os.getcwd()):
         txt_files.append("../" + arg.dir + "/images/" + filename[:-4] + ".png")
 os.chdir("..")
 
-n = len(txt_files)
+if arg.size >= len(txt_files):
+  n = len(txt_files)
+else:
+  n = arg.size
+
 s = arg.train + arg.val + arg.test
 a = math.floor(n*arg.train/s)
 b = math.ceil(n*arg.val/s)
