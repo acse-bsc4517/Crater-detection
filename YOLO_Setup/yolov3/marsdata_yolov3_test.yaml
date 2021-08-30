@@ -1,0 +1,13 @@
+# Test command: python test.py --data marsdata_yolov3_test.yaml
+# Default dataset location is next to YOLOv3:
+#   /parent_folder
+#     /crater_data
+#     /yolov3
+
+test: ../crater_group_dataset/test.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'crater']

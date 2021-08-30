@@ -1,0 +1,13 @@
+# Train command: python test.py --data marsdata_yolov5m_test.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /crater_data
+#     /yolov5
+
+val: ../crater_group_dataset/test.txt
+
+# number of classes
+nc: 1
+
+# class names
+names: [ 'crater']
