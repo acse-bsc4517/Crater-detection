@@ -8,7 +8,6 @@ if __name__== '__main__':
     parser.add_argument('--dir', type = str, default='dataset_lunar', help='path to dataset directory')
     parser.add_argument('--min', type = int, default = 0, help=' ')
     parser.add_argument('--max', type = int, default = 100, help='')
-    parser.add_argument('--revert', type = bool, default = False, help = 'Remove the (modified) label directory and recover original labels')
     arg = parser.parse_args()
 
 min_count = arg.min

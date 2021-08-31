@@ -11,7 +11,7 @@ def label_filter_size(labels: str, min_size: float, max_size: float):
         c, x, y, w, h = label.split(' ')[:5]
         w_val = float(w)
         h_val = float(h)
-        if (max_size >= w_val > min_size and max_size >= h_val > min_size):
+        if (max_size > w_val >= min_size and max_size > h_val >= min_size):
             new_label += ' '.join((c, x, y, w, h))
             new_label += '\n'
     return new_label
