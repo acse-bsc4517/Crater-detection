@@ -41,10 +41,11 @@ trainlist = txt_files[0:a]
 vallist = txt_files[a:b+a]
 testlist = txt_files[b+a:n]
 
-random.shuffle(txt_files)
-trainlist = txt_files[0:a]
-vallist = txt_files[a:b+a]
-testlist = txt_files[b+a:n]
+print('Total number of images considered = %i' %n)
+print('The number of images for')
+print('training = %i' %len(trainlist))
+print('validation = %i' %len(vallist))
+print('testing = %i' %len(testlist))
 
 if len(trainlist) != 0:
     f = open("train.txt","w")
