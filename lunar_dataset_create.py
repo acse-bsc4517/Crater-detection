@@ -1,3 +1,7 @@
+# Ensure the lunar mosaic is in the same location as this python file when called
+# Use the following command on linux/Google Colab to download the mosaic
+# wget -P . https://planetarymaps.usgs.gov/mosaic/Lunar_LRO_LROC-WAC_Mosaic_global_100m_June2013.tif
+
 import pandas as pd
 import numpy as np
 from tifffile import imread
