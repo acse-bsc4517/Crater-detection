@@ -1,3 +1,7 @@
+# This is a modified training python file, taken from the Ultralytics Implementation
+# of YOLOv3 (https://github.com/ultralytics/yolov3). It was modified such that it could
+# freeze certain YOLOv3 layers for transfer learning, in a similar way used in YOLOv5 (Ultralytics)
+
 import argparse
 import logging
 import math
