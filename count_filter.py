@@ -1,3 +1,7 @@
+# This python file targets a dataset folder and create a text.txt
+# that includes all the image file names which has ground-truth
+# craters ≥ min and < max
+
 import os
 from tqdm import tqdm
 import argparse

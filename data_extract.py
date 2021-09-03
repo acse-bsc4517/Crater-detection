@@ -1,3 +1,6 @@
+# Module that includes functions to extract numberical data
+# from the dataset's labels files
+
 import os
 
 def get_data(directory: str):

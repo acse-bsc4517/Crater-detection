@@ -1,3 +1,4 @@
+# This file remove the 6th column in the labels of the Mars dataset.
 import os
 from tqdm import tqdm
 import argparse

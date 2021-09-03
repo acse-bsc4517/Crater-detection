@@ -62,6 +62,7 @@ for i in range(30):
         craters_w= craters_w.to_numpy() * 10 / np.cos(craters_lat*np.pi/180) / small_dim
         craters_h= craters_h.to_numpy() * 10 / small_dim
 
+        # Relative position of the craters on the image
         xx = (craters_lon - (180+grid_lon_min))/(small_dim/ppd)
         yy = (grid_lat_max - craters_lat)/(small_dim/ppd)
         text = ""

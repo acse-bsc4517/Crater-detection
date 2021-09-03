@@ -1,4 +1,4 @@
-# Train command: python train.py --data customdata.yaml
+# Train command: python train.py --data marsdata_yolov3_train.yaml
 # Default dataset location is next to YOLOv3:
 #   /parent_folder
 #     /crater_data

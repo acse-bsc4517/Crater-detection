@@ -1,4 +1,4 @@
-# Test command: python test.py --data marsdata_yolov3_test.yaml
+# Test command: python test.py --data marsdata_yolov3_test.yaml --task test
 # Default dataset location is next to YOLOv3:
 #   /parent_folder
 #     /crater_data

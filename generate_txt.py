@@ -1,4 +1,4 @@
-# This is going to be uploaded next to the data directory/root directory
+# Generate train.txt, valid.txt and test.txt that can be read by YOLO data yaml files
 import argparse
 import os
 import random
@@ -36,6 +36,7 @@ a = math.floor(n*arg.train/s)
 b = math.ceil(n*arg.val/s)
 c = s - a - b
 
+# Randomly shuffle the names and distribute it across training, validation and testing
 random.shuffle(txt_files)
 trainlist = txt_files[0:a]
 vallist = txt_files[a:b+a]
@@ -47,6 +48,7 @@ print('training = %i' %len(trainlist))
 print('validation = %i' %len(vallist))
 print('testing = %i' %len(testlist))
 
+# Write files
 if len(trainlist) != 0:
     f = open("train.txt","w")
     for stuff in trainlist:
