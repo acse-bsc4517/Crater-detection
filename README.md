@@ -1,6 +1,5 @@
 # Crater-detection
-This repository contains all the tools required to set up and assist the YOLO implementations. 
-There is also a shared Google drive folder that contains essential large files (link: https://drive.google.com/drive/folders/1IoOYq4lGTFjVdtlSFHl5dwrGfO0WclMg?usp=sharing)
+This repository contains all the tools required to set up and assist the YOLO implementations. There is also a shared Google drive folder that contains essential large files (link: https://drive.google.com/drive/folders/1IoOYq4lGTFjVdtlSFHl5dwrGfO0WclMg?usp=sharing)
 The working directory should be set up as follows:
 
 ```
